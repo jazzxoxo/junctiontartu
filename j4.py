@@ -4,13 +4,14 @@ l = ["Rock", "Paper", "Scissors", "Spock", "Lizard"]
 y = randint(0,4)
 
 while True:
-    a = input("Choose ur fighter?")
+    a = input("Choose ur fighter? ")
     if a in l:
         for i in range(5):
             if a == l[i]:
                 x = i
         break
 
+print(f"The computer picked {l[y]}")
 if x == y:
     print("Draw")
 elif y == (x+2)%5 or y == (x+4)%5:
